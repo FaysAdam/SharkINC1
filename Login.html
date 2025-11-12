@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Multi-sections</title>
+  <link rel="stylesheet" href="Couverture.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <img src="file:///C:/Users/adamf/Downloads/6127d820aa481f0004ea72d2.png" alt="logo">
+
+<div class="navbar">
+  <button onclick="showPage('accueil')">Accueil</button>
+  <button onclick="showPage('about')">À propos</button>
+  <button onclick="showPage('contact')">Contact</button>
+  </div>
+
+  <div id="accueil" class="page active">
+    <h1>Accueil</h1>
+    <p>Bienvenue sur ma page d'accueil.</p>
+  </div>
+
+  <div id="about" class="page">
+    <h1>À propos</h1>
+    <p>Voici la page À propos.</p>
+  </div>
+
+  <div id="contact" class="page">
+    <h1>Contact</h1>
+    <p>Voici la page Contact.</p>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      // Cache toutes les pages
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      // Affiche seulement la page cliquée
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
