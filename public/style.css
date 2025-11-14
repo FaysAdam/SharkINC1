@@ -1,0 +1,131 @@
+/* Import police (optionnel) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #201b1b, #6b0ee4);
+}
+
+/* Container */
+.container{
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: linear-gradient(180deg, #adb5eb, #ddd);
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  overflow: hidden;
+  padding: 40px;
+}
+
+/* Titre */
+.container h1{
+  font-size: 50px;
+  margin: 0 0 20px 0;
+  color: #222;
+}
+
+/* Form box */
+.form-box{
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.input-box{
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 12px 45px 12px 14px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: .2s;
+}
+
+.input-box input:focus{
+  border-color: #6c7ae0;
+  box-shadow: 0 4px 18px rgba(108,122,224,.15);
+}
+
+/* Icon inside input */
+.input-box i{
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #666;
+  pointer-events: none;
+}
+
+/* Forgot link */
+.forgot-link{
+  text-align: right;
+  margin-top: 6px;
+}
+
+.forgot-link a{
+  color: #6c7ae0;
+  font-size: 14px;
+}
+
+/* Button */
+.btn{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(12deg, #6c7ae0, #a40eb8);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.btn:active{
+  transform: translateY(1px);
+}
+
+.login-register{
+  text-align: center;
+  margin-top: 18px;
+  color: #555;
+}
+
+.login-register a{
+  color: #6c7ae0;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 840px){
+  .container{
+    width: 95%;
+    height: auto;
+    padding: 24px;
+  }
+
+  .form-box{
+    max-width: 100%;
+  }
+}
